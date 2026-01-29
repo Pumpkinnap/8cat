@@ -1,3 +1,23 @@
+button:not(box button),
+svg,
+use,
+input[type="checkbox"],
+input[type="radio"],
+label[for],
+.clickable,
+.cursor-pointer {
+    cursor: var(--指针光标);
+}
+button:not(box button):active,
+svg:active,
+use:active,
+input[type="checkbox"]:active,
+input[type="radio"]:active,
+label[for]:active,
+.clickable:active,
+.cursor-pointer:active {
+  cursor:var(--指针光标-点击)!important;
+}
 .shadow-lg~.w-0{
 background:#a1a1a1
 }
