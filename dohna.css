@@ -65,9 +65,9 @@ label[for]:active,
     background:#a1a1a1
 }
 .MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root button,
-.undefined.flex-col button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall  {
+.MuiCollapse-root .undefined.flex-col button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall {
   background: linear-gradient(135deg, #dad6a6 0%, #c8c49a 100%);
-  color: rgb(48, 48, 48);
+  color: rgb(10, 10, 10);
   border: 1.2px solid #3b3128; 
   box-shadow: 
     0 2px 4px rgba(0,0,0,0.3), 
