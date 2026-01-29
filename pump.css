@@ -19,5 +19,5 @@ label[for]:active,
   cursor:var(--指针光标-点击)!important;
 }
 .shadow-lg~.w-0{
-background:#a1a1a1
+background:#a1a1a100
 }
