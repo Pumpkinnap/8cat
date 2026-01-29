@@ -75,8 +75,11 @@ label[for]:active,
     inset 0 -1px 0px rgba(0,0,0,0.1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.MuiCollapse-root .md\:pr-\[11px\] .MuiStack-root {
-    color: rgb(10, 10, 10);
+.MuiCollapse-root .MuiTypography-root.MuiTypography-body2.text-gray-500.text-xs {
+    color: #080808
+}
+.MuiCollapse-root .MuiTypography-root.MuiTypography-body2.text-gray-500.text-xs ~ .MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall use {
+    color: #1b1b1b
 }
 .MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root button:hover {
   transform: scale(1.025);
