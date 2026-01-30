@@ -1,0 +1,103 @@
+/*指针光标*/
+html {
+    --默认光标:url('https://cloudflare-imgbed-ehf.pages.dev/file/鼠标_默认 (9).svg') 0 0, default;
+    --指针光标:url('https://cloudflare-imgbed-ehf.pages.dev/file/鼠标_指针.svg') 8 0, default;
+    --指针光标-点击:url('https://cloudflare-imgbed-ehf.pages.dev/file/鼠标_指针__active (1).svg') 8 8, default;
+    cursor: var(--默认光标);
+}
+*::-webkit-scrollbar {
+    cursor: var(--默认光标);
+}
+.h-full {
+    cursor: var(--默认光标);
+}
+button:not(box button),
+btn,
+svg,
+use,
+input[type="checkbox"],
+input[type="radio"],
+label[for],
+.clickable,
+.cursor-pointer,
+.ursor-pointer,
+.MuiButtonBase-root,
+.MuiAccordion-heading,
+*[type='button'] {
+    cursor: var(--指针光标);
+}
+.MuiStack-root .MuiBox-root,
+.MuiAccordion-heading .MuiButtonBase-root{
+    cursor: var(--指针光标)!important;
+}
+button:not(box button):active,
+btn:active,
+svg:active,
+use:active,
+input[type="checkbox"]:active,
+input[type="radio"]:active,
+label[for]:active,
+.clickable:active,
+.cursor-pointer:active,
+.ursor-pointer:active,
+.MuiButtonBase-root:active,
+.MuiAccordion-heading:active,
+*[type='button']:active
+{
+  cursor:var(--指针光标-点击)!important;
+}
+.MuiStack-root .MuiBox-root:active,
+.MuiAccordion-heading .MuiButtonBase-root:active{
+    cursor:var(--指针光标-点击)!important;
+}
+.flex-1.hide-scrollbar.overflow-auto.transition-all.duration-500 .flex-col .relative .MuiBox-root{
+    cursor: var(--指针光标)!important;
+}
+.flex-1.hide-scrollbar.overflow-auto.transition-all.duration-500 .flex-col .relative .MuiBox-root:active{
+    cursor:var(--指针光标-点击)!important;
+}
+/*背景*/
+.shadow-lg~.w-0.grow.overflow-auto {
+    background:#a1a1a1
+}
+/*侧边栏*/
+.MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root {
+    background:#a1a1a1
+}
+.MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root button,
+.undefined.flex-col button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall:not(#header-setting-button) {
+  background: linear-gradient(135deg, #dad6a6 0%, #c8c49a 100%);
+  color: rgb(10, 10, 10);
+  border: 1.2px solid #3b3128; 
+  box-shadow: 
+    0 2px 4px rgba(0,0,0,0.3), 
+    inset 0 1px 0px rgba(255,255,255,0.15),
+    inset 0 -1px 0px rgba(0,0,0,0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiCollapse-root .MuiTypography-root.MuiTypography-body2.text-gray-500.text-xs {
+    color: #080808
+}
+.MuiCollapse-root .MuiTypography-root.MuiTypography-body2.text-gray-500.text-xs ~ .MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeSmall use {
+    color: #1b1b1b
+}
+.MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root button:hover {
+  transform: scale(1.025);
+  transition: all 0.5s ease;
+}
+.MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root .MuiList-root.MuiList-padding .ursor-pointer {
+    border: 3px solid #000;
+    box-shadow: 3.5px 3.5px 0 #000;
+    transition: box-shadow 0.2s ease-in-out, transform 0.35s ease;
+    background: #f3cf01;
+    transform: skewX(-15deg);
+    user-select: none;
+}
+.MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root .MuiList-root.MuiList-padding .ursor-pointer .text-xs{
+    color: #000000;
+    font-weight: 900;
+    transform: skewX(5deg);
+}
+.MuiCollapse-root .relative.overflow-auto.h-full.bg-white.MuiBox-root .MuiList-root.MuiList-padding .ursor-pointer svg {
+    color:#000000;
+}
